@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Making it accessible for older version of internet explorer-->
+        <meta name="keywords" content="portfolio, Web Development, Computer Science & Engineering, Taoshiflex, Gazi Taoshif"> 
+        <meta name="description" content="This is a portfolio website of Gazi Taoshif.">
+        
+        <title>My Portfolio</title>
+
+        <!--Font Awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Google font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: whitesmoke ; 
+                font-family: "Roboto", serif;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!--Section: navbar-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about" target="_self" title="more about me">About Me</a></li>
+                    <li><a href="#skills" target="_self" title="contact me">My Skills</a></li>
+                    <li><a href="#projects" target="_self" title="contact me">My Projects</a></li>
+                    <li><a href="#contact" target="_self" title="contact me">Contact Me</a></li>      
+                </ul>
+            </nav>
+        </header> 
+
+    <main>
+        <!--Section: intro-->
+    <section id="intro">
+        <h1>Gazi Taoshif</h1>
+        <p>A Passionate Computer Science & Engineering Student </p>
+        <a href="https://www.linkedin.com/in/taoshif1/" target="_blank">
+            <img src="./images/taoshif.jpg" alt="loading..." height="150px">
+        </a> 
+        <hr/>
+    </section>
+
+    <!--Section: about me-->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            <b>Education:</b> I am a student of Computer Science & Engineering at East West University.
+        </p>
+    </section> 
+
+    <!--Section: Skills-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Bootstrap5</li>
+        </ul>
+
+        <h2>Proficiency</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td rowspan="2">Expert</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>C & C++</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap 5</td>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <h2>On-going Learning Progress</h2>
+            <div>
+                <label for="mernProgress">MERN: </label>
+                <progress id="mernProgress" value="90" max="100">90% </progress>
+            </div>
+        </div>
+
+        <div>
+            <h2>Experience Level</h2>
+            <label for="experienceLevel">Experience: </label>
+            <meter id="experienceLevel" value="3" min="0" max="5">3years%</meter>
+        </div> 
+
+    </section>
+
+    <!--Section: Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li><a target="_blank" href="https://github.com/Taoshif1/java-flappy-bird-game">
+                Flappy Bird Game</a>
+            </li>
+            <li>Internet Management System using Java</li>
+            <li>Food Ordering System using Java</li>
+            <li>Shopping Website</li>
+            <li>Library Management System</li>
+            <li>Server-Client TCP Chatting Application</li>
+        </ol>
+    </section>
+        
+    <!--section: hobbies-->
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Doing GYM</li>
+            <li>Learning new things</li>
+            <li>Making Video Games</li>
+            <li>Travelling</li>
+        </ul>
+    </section>  
+
+    <!--Section: Video-->
+            <video width="320" controls>
+                <source src="https://www.youtube.com/watch?v=3JZ_D3ELwOQ" type="video/mp4">
+                Your browser does not support the video.
+            </video>
+
+
+    <!--Section: Contact-->
+    <section id="contact">
+        <h2>Contact me</h2>
+            <form   action="https://formspree.io/f/mldgvoel"
+            method="POST">
+
+            <fieldset>
+                <legend><b><u>Personal Information</u></b></legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <span>Gender:</span>
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="12">
+                </div>
+            </fieldset>
+
+                <div>
+                    <label for="programming">Favorite Programming language:</label>
+                    <input list="languages" id="programming" name="programming" required>
+                    <datalist id="languages">
+                        <option value="C"></option>
+                        <option value="C++"></option>
+                        <option value="Java"></option>
+                        <option value="Python"></option>
+                        <option value="JavaScript"></option>
+                    </datalist>
+                </div>
+
+                <!--
+                <div>
+                    <label for="website"> Website: </label>
+                    <input type="url" id="website" name="website" pattern="https?://.+"/>
+                </div>
+                -->
+                
+                <div>
+                    <label for="subject">Subject:</label>
+                    <select name="subeject" id="subject">
+                        <option value="inquiry">Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="job">Job Opportunity</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message : </label>
+                    <textarea name="message" id="message"></textarea> 
+                </div>
+                
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+
+            </form>
+
+    </section>
+    </main>
+
+    <!-- footer-->
+        <footer>
+            <p>Copyright reserved by &copy;Taoshif2025</p>
+            <a href="tel:01983478582">Call me</a>
+            <a href="mailto:taoshif2@gmail.com">Email me</a>
+        
+        <div>
+            <h3><u>Follow Me </u><i class="fa-solid fa-down-long"></i></h3>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/share/1Eg22xsFfh/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/taoshif1/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </li>  
+                <li>
+                    <a href="https://github.com/Taoshif1" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </li>  
+            </ul>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227582.80503873125!2d90.419689!3d23.780840500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1740239291056!5m2!1sen!2sbd" 
+            title="Dhaka, Bangladesh," width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </footer>
+    </body>
+</html>
